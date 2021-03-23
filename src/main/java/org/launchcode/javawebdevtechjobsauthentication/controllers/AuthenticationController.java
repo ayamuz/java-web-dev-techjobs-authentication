@@ -5,6 +5,7 @@ import org.launchcode.javawebdevtechjobsauthentication.models.data.UserRepositor
 import org.launchcode.javawebdevtechjobsauthentication.models.dto.LoginFormDTO;
 import org.launchcode.javawebdevtechjobsauthentication.models.dto.RegisterFormDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,9 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.Optional;
 
+@Controller
 public class AuthenticationController {
+
 @Autowired
 UserRepository userRepository;
     //Static variable for the session key
