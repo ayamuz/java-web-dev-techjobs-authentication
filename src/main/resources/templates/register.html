@@ -14,13 +14,13 @@
     </div>
     <div class="form-group">
         <label>Password
-            <input class="form-control" th:field="${registerFormDTO.password}" />
+            <input class="form-control" th:field="${registerFormDTO.password} " type="password"/>
         </label>
         <p class="error" th:errors="${registerFormDTO.password}"></p>
     </div>
     <div class="form-group">
         <label>Verify Password
-            <input class="form-control" th:field="${registerFormDTO.verifyPassword}" />
+            <input class="form-control" th:field="${registerFormDTO.verifyPassword}" type="password"/>
         </label>
     </div>
 
